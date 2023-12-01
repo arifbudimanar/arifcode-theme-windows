@@ -1,0 +1,59 @@
+{
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "ArifCode Theme - Windows",
+        "path": "./dist/arifcode-theme-windows.json",
+        "uiTheme": "vs-dark"
+      }
+    ]
+  },
+  "description": "Oceanic dark theme for VS Code and Windows Terminal.",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "watch": "^1.0.2"
+  },
+  "displayName": "ArifCode Theme Windows",
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "galleryBanner": {
+    "color": "#2b2b2b",
+    "theme": "dark"
+  },
+  "homepage": "https://github.com/arifbudimanar/arifcode-theme-windows",
+  "icon": "images/logo-dark.png",
+  "keywords": [
+    "arifcode",
+    "dark-theme",
+    "modern",
+    "elegant",
+    "accessible",
+    "color-theme",
+    "oceanic",
+    "laravel",
+    "minimalist",
+    "minimal"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    "Arif Budiman Arrosyid"
+  ],
+  "name": "arifcode-theme-windows",
+  "publisher": "arifbudimanar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arifbudimanar/arifcode-theme-windows"
+  },
+  "scripts": {
+    "build": "node src/index.js",
+    "dev": "watch 'npm run build' ./src"
+  },
+  "version": "0.0.1"
+}
