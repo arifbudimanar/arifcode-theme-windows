@@ -1,50 +1,17 @@
 ![banner](images/banner.png)
 
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/arifbudimanar.arifcode-theme-windows?style=for-the-badge)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/arifbudimanar.arifcode-theme-windows?style=for-the-badge)
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/arifbudimanar.arifcode-theme-windows?style=for-the-badge)
-![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/arifbudimanar.arifcode-theme-windows?style=for-the-badge)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/arifbudimanar.arifcode-theme?style=for-the-badge)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/arifbudimanar.arifcode-theme?style=for-the-badge)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/arifbudimanar.arifcode-theme?style=for-the-badge)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/arifbudimanar.arifcode-theme?style=for-the-badge)
 
 # ArifCode Theme - Windows
 Oceanic dark theme for VS Code and Windows Terminal.
 
 ## Installation
-### With Git Clone
-1. Clone this repository
-```bash
-git clone https://github.com/arifbudimanar/arifcode-theme-windows
 ```
-
-2. Install VSCE
-```bash
-npm install -g vsce
+ext install arifbudimanar.arifcode-theme-windows
 ```
-
-3. Build the extension
-```bash
-npm run build
-```
-
-4. Package the extension
-```bash
-vsce package
-```
-
-5. Install the extension
-
-```bash
-code --install-extension generated-filename.vsix
-```
-### With VSIX
-1. Download the latest [release](https://github.com/arifbudimanar/arifcode-theme-windows/releases)
-2. Install the extension
-```bash
-code --install-extension generated-filename.vsix
-```
-### With [VSCode](https://marketplace.visualstudio.com/items?itemName=arifbudimanar.arifcode-theme-windows)
-1. Open the Extensions sidebar in VS Code
-2. Search for `ArifCode Theme`
-3. Click `Install`
 
 ## Preview
 ### Default
@@ -53,26 +20,23 @@ code --install-extension generated-filename.vsix
 ![Minimalist](images/minimalist.png)
 ### Zen Mode
 ![Zen Mode](images/zenmode.png)
-
-## File
-### HTML/CSS
-![HTML CSS](images/htmlcss.png)
-### PHP
-![PHP](images/php.png)
-
 ## Recommended Settings
 ### settings.json
 ```json
 {
 	"breadcrumbs.enabled": false,
+	"diffEditor.ignoreTrimWhitespace": false,
 	"editor.bracketPairColorization.enabled": false,
-	"editor.cursorBlinking": "phase",
+	"editor.cursorBlinking": "expand",
 	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.cursorStyle": "line-thin",
 	"editor.fontFamily": "'JetBrains Mono'",
 	"editor.fontLigatures": true,
 	"editor.formatOnSave": true,
 	"editor.inlineSuggest.enabled": true,
 	"editor.lineHeight": 3.15,
+	// "editor.lineHeight": 2.15,
+	// "editor.lineHeight": 48,
 	"editor.matchBrackets": "never",
 	"editor.minimap.enabled": false,
 	"editor.renderLineHighlight": "none",
@@ -100,25 +64,57 @@ code --install-extension generated-filename.vsix
 	"terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 	"terminal.integrated.gpuAcceleration": "on",
 	"typescript.inlayHints.enumMemberValues.enabled": true,
+	"update.mode": "default",
 	"window.autoDetectColorScheme": true,
 	"window.commandCenter": false,
-	"window.menuBarVisibility": "compact",
 	"window.title": "${rootName}",
-	"workbench.activityBar.location": "hidden",
-	"workbench.colorTheme": "ArifCode Theme",
+	"workbench.colorTheme": "ArifCode Theme - Windows",
+	"workbench.editor.tabCloseButton": "off",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.layoutControl.enabled": false,
 	"workbench.list.smoothScrolling": true,
-	"workbench.preferredDarkColorTheme": "ArifCode Theme",
+	"workbench.preferredDarkColorTheme": "ArifCode Theme - Windows",
 	"workbench.preferredLightColorTheme": "GitHub Light Default",
 	"workbench.startupEditor": "none",
-	"workbench.statusBar.visible": false,
 	"workbench.tree.indent": 16,
 	"zenMode.centerLayout": false,
 	"zenMode.fullScreen": false,
-	"zenMode.hideLineNumbers": false
+	"zenMode.hideLineNumbers": false,
+	"workbench.activityBar.location": "hidden",
+	"workbench.statusBar.visible": false,
+	"window.menuBarVisibility": "compact"
 }
 ```
+
+## Want more minimalist? I got you!
+Install `Apc Customize UI++` and add this to config
+```
+"window.titleBarStyle": "native",
+"apc.electron": {
+	"frame": false,
+},
+"apc.activityBar": {
+	"size": 36,
+},
+"apc.menubar.compact": true,
+"apc.statusBar": {
+	"height": 30,
+},
+```
+### Without Frame 
+![Without Frame](images/withoutframe.png)
+## Even more?
+```
+"zenMode.showTabs": "none",
+```
+### Without Frame + Zen Mode + No Tab
+![Without Frame](images/withoutframe+zen.png)
+
+## File
+### HTML/CSS
+![HTML CSS](images/htmlcss.png)
+### PHP
+![PHP](images/php.png)
 
 ### keybindings.json
 ```json
@@ -143,27 +139,26 @@ code --install-extension generated-filename.vsix
 ### settings.json
 ```json
 {
-	"background": "#202020",
-	"black": "#292c2c",
+    "background": "#202020",
+	"black": "#292C2C",
 	"blue": "#6699CC",
-	"brightBlack": "#c6c6c6",
+	"brightBlack": "#C6C6C6",
 	"brightBlue": "#6699CC",
 	"brightCyan": "#56B6C2",
 	"brightGreen": "#99C794",
 	"brightPurple": "#C594C5",
 	"brightRed": "#FAC863",
-	"brightWhite": "#c6c6c6",
+	"brightWhite": "#C6C6C6",
 	"brightYellow": "#FAC863",
-	"cursorColor": "#c6c6c6",
+	"cursorColor": "#C6C6C6",
 	"cyan": "#5FB3B3",
-	"foreground": "#c6c6c6",
+	"foreground": "#C6C6C6",
 	"green": "#99C794",
 	"name": "ArifCode Windows",
 	"purple": "#C594C5",
 	"red": "#E15A60",
-	"selectionBackground": "#c6c6c6",
-	"white": "#c6c6c6",
+	"selectionBackground": "#C6C6C6",
+	"white": "#C6C6C6",
 	"yellow": "#FAC863"
 }
-
 ```
