@@ -24,7 +24,7 @@
     "vscode": "^1.14.0"
   },
   "galleryBanner": {
-    "color": "#2b2b2b",
+    "color": "#202020",
     "theme": "dark"
   },
   "homepage": "https://github.com/arifbudimanar/arifcode-theme-windows",
@@ -55,5 +55,5 @@
     "build": "node src/index.js",
     "dev": "watch 'npm run build' ./src"
   },
-  "version": "0.0.7"
+  "version": "0.0.8"
 }

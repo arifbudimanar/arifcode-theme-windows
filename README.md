@@ -139,7 +139,7 @@ Install `Apc Customize UI++` and add this to config
 ### settings.json
 ```json
 {
-    "background": "#202020",
+	"background": "#202020",
 	"black": "#292C2C",
 	"blue": "#6699CC",
 	"brightBlack": "#C6C6C6",
