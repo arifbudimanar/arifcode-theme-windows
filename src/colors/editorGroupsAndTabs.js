@@ -6,7 +6,7 @@ const theme = require("../theme");
 module.exports = {
   "editorGroup.border": theme.backgroundLight,
   "editorGroup.dropBackground": theme.backgroundLight,
-  "editorGroupHeader.noTabsBackground": theme.backgroundLight,
+  "editorGroupHeader.noTabsBackground": theme.background,
   "editorGroupHeader.tabsBackground": theme.backgroundDark,
   "editorGroupHeader.tabsBorder": theme.backgroundLight,
   "editorGroup.emptyBackground": theme.background,
@@ -24,7 +24,8 @@ module.exports = {
   "tab.inactiveModifiedBorder": "#5986B3",
   "tab.unfocusedActiveModifiedBorder": "#6699cc",
   "tab.unfocusedInactiveModifiedBorder": "#5986B3",
-  "tab.activeBorderTop": theme.yellow,
+  "tab.activeBorder": theme.yellow,
+  // "tab.activeBorderTop": theme.yellow,
   // "tab.unfocusedActiveBorderTop": "#",
   // "tab.hoverBorder": theme.backgroundLight,
   // "tab.unfocusedHoverBorder": theme.backgroundLight,
